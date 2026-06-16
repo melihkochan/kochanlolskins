@@ -276,12 +276,12 @@
     }
   },
   "tray": {
-    "show": "显示 Bocchi",
-    "hide": "隐藏 Bocchi",
+    "show": "显示 KOCHAN",
+    "hide": "隐藏 KOCHAN",
     "language": "语言",
     "checkForUpdates": "检查更新",
     "openSettings": "打开设置",
-    "quit": "退出 Bocchi"
+    "quit": "退出 KOCHAN"
   },
   "errors": {
     "generic": "发生错误",
@@ -353,7 +353,7 @@
   "error": "错误",
   "update": {
     "available": "有可用更新",
-    "description": "Bocchi 的新版本可供下载。",
+    "description": "KOCHAN 的新版本可供下载。",
     "whatsNew": "新功能",
     "downloading": "下载中...",
     "updateNow": "立即更新",

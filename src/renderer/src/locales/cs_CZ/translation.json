@@ -272,11 +272,11 @@
     }
   },
   "tray": {
-    "show": "Zobrazit Bocchi",
-    "hide": "Skrýt Bocchi",
+    "show": "Zobrazit KOCHAN",
+    "hide": "Skrýt KOCHAN",
     "language": "Jazyk",
     "openSettings": "Otevřít nastavení",
-    "quit": "Ukončit Bocchi",
+    "quit": "Ukončit KOCHAN",
     "checkForUpdates": "Zkontrolovat aktualizace"
   },
   "fileUpload": {
@@ -341,7 +341,7 @@
   "error": "Chyba",
   "update": {
     "available": "Dostupná aktualizace",
-    "description": "Nová verze Bocchi je k dispozici ke stažení.",
+    "description": "Nová verze KOCHAN je k dispozici ke stažení.",
     "whatsNew": "Co je nového",
     "downloading": "Stahuje se...",
     "updateNow": "Aktualizovat nyní",

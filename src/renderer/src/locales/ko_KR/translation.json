@@ -276,12 +276,12 @@
     }
   },
   "tray": {
-    "show": "Bocchi 보이기",
-    "hide": "Bocchi 숨기기",
+    "show": "KOCHAN 보이기",
+    "hide": "KOCHAN 숨기기",
     "language": "언어",
     "checkForUpdates": "업데이트 확인",
     "openSettings": "설정 열기",
-    "quit": "Bocchi 종료"
+    "quit": "KOCHAN 종료"
   },
   "errors": {
     "generic": "오류가 발생했습니다",
@@ -353,7 +353,7 @@
   "error": "오류",
   "update": {
     "available": "업데이트 사용 가능",
-    "description": "Bocchi의 새 버전을 다운로드할 수 있습니다.",
+    "description": "KOCHAN의 새 버전을 다운로드할 수 있습니다.",
     "whatsNew": "새로운 기능",
     "downloading": "다운로드 중...",
     "updateNow": "지금 업데이트",

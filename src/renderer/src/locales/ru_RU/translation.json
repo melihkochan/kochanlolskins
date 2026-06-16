@@ -276,12 +276,12 @@
     }
   },
   "tray": {
-    "show": "Показать Bocchi",
-    "hide": "Скрыть Bocchi",
+    "show": "Показать KOCHAN",
+    "hide": "Скрыть KOCHAN",
     "language": "Язык",
     "checkForUpdates": "Проверить обновления",
     "openSettings": "Открыть настройки",
-    "quit": "Выйти из Bocchi"
+    "quit": "Выйти из KOCHAN"
   },
   "errors": {
     "generic": "Произошла ошибка",
@@ -353,7 +353,7 @@
   "error": "Ошибка",
   "update": {
     "available": "Доступно обновление",
-    "description": "Новая версия Bocchi доступна для скачивания.",
+    "description": "Новая версия KOCHAN доступна для скачивания.",
     "whatsNew": "Что нового",
     "downloading": "Скачивание...",
     "updateNow": "Обновить сейчас",

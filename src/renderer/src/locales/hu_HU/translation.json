@@ -272,11 +272,11 @@
     }
   },
   "tray": {
-    "show": "Bocchi megjelenítése",
-    "hide": "Bocchi elrejtése",
+    "show": "KOCHAN megjelenítése",
+    "hide": "KOCHAN elrejtése",
     "language": "Nyelv",
     "openSettings": "Beállítások megnyitása",
-    "quit": "Bocchi kilépés",
+    "quit": "KOCHAN kilépés",
     "checkForUpdates": "Frissítések keresése"
   },
   "fileUpload": {
@@ -341,7 +341,7 @@
   "error": "Hiba",
   "update": {
     "available": "Frissítés elérhető",
-    "description": "A Bocchi új verziója letölthető.",
+    "description": "A KOCHAN új verziója letölthető.",
     "whatsNew": "Mi újság",
     "downloading": "Letöltés...",
     "updateNow": "Frissítés most",

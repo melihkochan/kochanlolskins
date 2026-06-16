@@ -20,7 +20,7 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
-const THEME_STORAGE_KEY = 'bocchi-theme-config'
+const THEME_STORAGE_KEY = 'kochan-theme-config'
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   // Load initial theme config from localStorage or use defaults

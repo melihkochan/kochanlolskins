@@ -281,8 +281,8 @@ function updateTrayMenu(): void {
   const contextMenu = Menu.buildFromTemplate([
     {
       label: mainWindow?.isVisible()
-        ? t('tray.hide', 'Hide Bocchi')
-        : t('tray.show', 'Show Bocchi'),
+        ? t('tray.hide', 'Hide KOCHAN')
+        : t('tray.show', 'Show KOCHAN'),
       click: () => {
         if (mainWindow) {
           if (mainWindow.isVisible()) {
@@ -447,7 +447,7 @@ function updateTrayMenu(): void {
     },
     { type: 'separator' },
     {
-      label: t('tray.quit', 'Quit Bocchi'),
+      label: t('tray.quit', 'Quit KOCHAN'),
       click: () => {
         app.quit()
       }
@@ -460,7 +460,7 @@ function updateTrayMenu(): void {
 function createTray(): void {
   const trayIcon = nativeImage.createFromPath(icon)
   tray = new Tray(trayIcon)
-  tray.setToolTip('Bocchi')
+  tray.setToolTip('KOCHAN')
 
   // Initial menu
   updateTrayMenu()
@@ -500,7 +500,7 @@ app.on('open-file', (event, filePath) => {
 if (gotTheLock) {
   app.whenReady().then(async () => {
     // Set app user model id for windows
-    electronApp.setAppUserModelId('com.hoangvu12.bocchi')
+    electronApp.setAppUserModelId('com.kochan.app')
 
     // Initialize migration service
     await skinMigrationService.initialize()
@@ -2176,7 +2176,7 @@ function setupIpcHandlers(): void {
       }
 
       // Create a temporary extraction to get the image
-      const tempDir = path.join(app.getPath('temp'), 'bocchi-extract-temp', `extract_${Date.now()}`)
+      const tempDir = path.join(app.getPath('temp'), 'kochan-extract-temp', `extract_${Date.now()}`)
       await fs.promises.mkdir(tempDir, { recursive: true })
 
       try {

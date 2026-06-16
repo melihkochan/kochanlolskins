@@ -272,11 +272,11 @@
     }
   },
   "tray": {
-    "show": "Arată Bocchi",
-    "hide": "Ascunde Bocchi",
+    "show": "Arată KOCHAN",
+    "hide": "Ascunde KOCHAN",
     "language": "Limba",
     "openSettings": "Deschide setările",
-    "quit": "Ieși din Bocchi",
+    "quit": "Ieși din KOCHAN",
     "checkForUpdates": "Verifică actualizări"
   },
   "fileUpload": {
@@ -341,7 +341,7 @@
   "error": "Eroare",
   "update": {
     "available": "Actualizare disponibilă",
-    "description": "O nouă versiune a lui Bocchi este disponibilă pentru descărcare.",
+    "description": "O nouă versiune a lui KOCHAN este disponibilă pentru descărcare.",
     "whatsNew": "Ce este nou",
     "downloading": "Se descarcă...",
     "updateNow": "Actualizează acum",

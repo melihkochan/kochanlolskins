@@ -272,12 +272,12 @@
     }
   },
   "tray": {
-    "show": "Afficher Bocchi",
-    "hide": "Masquer Bocchi",
+    "show": "Afficher KOCHAN",
+    "hide": "Masquer KOCHAN",
     "language": "Langue",
     "checkForUpdates": "Vérifier les mises à jour",
     "openSettings": "Ouvrir les paramètres",
-    "quit": "Quitter Bocchi"
+    "quit": "Quitter KOCHAN"
   },
   "fileUpload": {
     "uploadButton": "Télécharger un mod personnalisé",
@@ -341,7 +341,7 @@
   "error": "Erreur",
   "update": {
     "available": "Mise à jour disponible",
-    "description": "Une nouvelle version de Bocchi est disponible en téléchargement.",
+    "description": "Une nouvelle version de KOCHAN est disponible en téléchargement.",
     "whatsNew": "Nouveautés",
     "downloading": "Téléchargement...",
     "updateNow": "Mettre à jour maintenant",

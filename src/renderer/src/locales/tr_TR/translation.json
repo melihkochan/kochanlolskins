@@ -272,11 +272,11 @@
     }
   },
   "tray": {
-    "show": "Bocchi'yi göster",
-    "hide": "Bocchi'yi gizle",
+    "show": "KOCHAN'ı göster",
+    "hide": "KOCHAN'ı gizle",
     "language": "Dil",
     "openSettings": "Ayarları aç",
-    "quit": "Bocchi'den çık",
+    "quit": "KOCHAN'dan çık",
     "checkForUpdates": "Güncellemeleri Kontrol Et"
   },
   "fileUpload": {
@@ -341,7 +341,7 @@
   "error": "Hata",
   "update": {
     "available": "Güncelleme mevcut",
-    "description": "Bocchi'nin yeni sürümü indirme için mevcut.",
+    "description": "KOCHAN'ın yeni sürümü indirme için mevcut.",
     "whatsNew": "Yeni neler var",
     "downloading": "İndiriliyor...",
     "updateNow": "Şimdi güncelle",

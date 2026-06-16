@@ -101,7 +101,7 @@ export function UpdateDialogMock({ isOpen, onClose }: UpdateDialogMockProps) {
               </span>
             </div>
             <p className="text-sm text-charcoal-600 dark:text-charcoal-400">
-              A new version of Bocchi is available for download.
+              A new version of KOCHAN is available for download.
             </p>
           </div>
 

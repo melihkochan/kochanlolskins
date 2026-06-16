@@ -272,11 +272,11 @@
     }
   },
   "tray": {
-    "show": "顯示 Bocchi",
-    "hide": "隱藏 Bocchi",
+    "show": "顯示 KOCHAN",
+    "hide": "隱藏 KOCHAN",
     "language": "語言",
     "openSettings": "開啟設定",
-    "quit": "退出 Bocchi",
+    "quit": "退出 KOCHAN",
     "checkForUpdates": "检查更新"
   },
   "fileUpload": {
@@ -341,7 +341,7 @@
   "error": "錯誤",
   "update": {
     "available": "有可用更新",
-    "description": "有新版本的 Bocchi 可供下載。",
+    "description": "有新版本的 KOCHAN 可供下載。",
     "whatsNew": "更新內容",
     "downloading": "正在下載...",
     "updateNow": "立即更新",

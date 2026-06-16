@@ -272,11 +272,11 @@
     }
   },
   "tray": {
-    "show": "Mostra Bocchi",
-    "hide": "Nascondi Bocchi",
+    "show": "Mostra KOCHAN",
+    "hide": "Nascondi KOCHAN",
     "language": "Lingua",
     "openSettings": "Apri impostazioni",
-    "quit": "Esci da Bocchi",
+    "quit": "Esci da KOCHAN",
     "checkForUpdates": "Controlla aggiornamenti"
   },
   "fileUpload": {
@@ -341,7 +341,7 @@
   "error": "Errore",
   "update": {
     "available": "Aggiornamento disponibile",
-    "description": "Una nuova versione di Bocchi è disponibile per il download.",
+    "description": "Una nuova versione di KOCHAN è disponibile per il download.",
     "whatsNew": "Novità",
     "downloading": "Scaricando...",
     "updateNow": "Aggiorna ora",

@@ -15,7 +15,7 @@ export class UrlDownloadService {
   private tempDir: string
 
   constructor() {
-    this.tempDir = path.join(app.getPath('temp'), 'bocchi-url-imports')
+    this.tempDir = path.join(app.getPath('temp'), 'kochan-url-imports')
   }
 
   async initialize(): Promise<void> {

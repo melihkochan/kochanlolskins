@@ -276,12 +276,12 @@
     }
   },
   "tray": {
-    "show": "Mostrar Bocchi",
-    "hide": "Ocultar Bocchi",
+    "show": "Mostrar KOCHAN",
+    "hide": "Ocultar KOCHAN",
     "language": "Idioma",
     "checkForUpdates": "Buscar actualizaciones",
     "openSettings": "Abrir Configuración",
-    "quit": "Salir de Bocchi"
+    "quit": "Salir de KOCHAN"
   },
   "errors": {
     "generic": "Ocurrió un error",
@@ -353,7 +353,7 @@
   "error": "Error",
   "update": {
     "available": "Actualización disponible",
-    "description": "Hay una nueva versión de Bocchi disponible para descargar.",
+    "description": "Hay una nueva versión de KOCHAN disponible para descargar.",
     "whatsNew": "Novedades",
     "downloading": "Descargando...",
     "updateNow": "Actualizar ahora",

@@ -272,11 +272,11 @@
     }
   },
   "tray": {
-    "show": "إظهار Bocchi",
-    "hide": "إخفاء Bocchi",
+    "show": "إظهار KOCHAN",
+    "hide": "إخفاء KOCHAN",
     "language": "اللغة",
     "openSettings": "فتح الإعدادات",
-    "quit": "إنهاء Bocchi",
+    "quit": "إنهاء KOCHAN",
     "checkForUpdates": "Check for Updates"
   },
   "fileUpload": {
@@ -341,7 +341,7 @@
   "error": "خطأ",
   "update": {
     "available": "تحديث متاح",
-    "description": "إصدار جديد من Bocchi متاح للتحميل.",
+    "description": "إصدار جديد من KOCHAN متاح للتحميل.",
     "whatsNew": "ما الجديد",
     "downloading": "جاري التحميل...",
     "updateNow": "تحديث الآن",

@@ -802,7 +802,7 @@ export class SkinDownloader {
     onProgress?: BulkProgressCallback
   ): Promise<void> {
     const repository = LEAGUESKINS_REPO
-    const tempDir = path.join(app.getPath('temp'), 'bocchi-bulk-download')
+    const tempDir = path.join(app.getPath('temp'), 'kochan-bulk-download')
     const archivePath = path.join(tempDir, `${repository.repo}.tar.gz`)
     const extractPath = path.join(tempDir, 'extracted')
 

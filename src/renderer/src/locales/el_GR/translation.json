@@ -272,11 +272,11 @@
     }
   },
   "tray": {
-    "show": "Εμφάνιση Bocchi",
-    "hide": "Απόκρυψη Bocchi",
+    "show": "Εμφάνιση KOCHAN",
+    "hide": "Απόκρυψη KOCHAN",
     "language": "Γλώσσα",
     "openSettings": "Άνοιγμα ρυθμίσεων",
-    "quit": "Έξοδος από Bocchi",
+    "quit": "Έξοδος από KOCHAN",
     "checkForUpdates": "Έλεγχος για ενημερώσεις"
   },
   "fileUpload": {
@@ -341,7 +341,7 @@
   "error": "Σφάλμα",
   "update": {
     "available": "Διαθέσιμη ενημέρωση",
-    "description": "Μια νέα έκδοση του Bocchi είναι διαθέσιμη για λήψη.",
+    "description": "Μια νέα έκδοση του KOCHAN είναι διαθέσιμη για λήψη.",
     "whatsNew": "Τι νέο υπάρχει",
     "downloading": "Λήψη...",
     "updateNow": "Ενημέρωση τώρα",

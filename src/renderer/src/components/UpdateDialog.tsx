@@ -96,7 +96,7 @@ export function UpdateDialog({ isOpen, onClose }: UpdateDialogProps) {
       <DialogContent className="max-w-2xl">
         <DialogHeader>
           <DialogTitle>Update Available</DialogTitle>
-          <DialogDescription>A new version of Bocchi is available for download.</DialogDescription>
+          <DialogDescription>A new version of KOCHAN is available for download.</DialogDescription>
         </DialogHeader>
 
         <div className="space-y-6">

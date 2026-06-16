@@ -272,11 +272,11 @@
     }
   },
   "tray": {
-    "show": "แสดง Bocchi",
-    "hide": "ซ่อน Bocchi",
+    "show": "แสดง KOCHAN",
+    "hide": "ซ่อน KOCHAN",
     "language": "ภาษา",
     "openSettings": "เปิดการตั้งค่า",
-    "quit": "ออกจาก Bocchi",
+    "quit": "ออกจาก KOCHAN",
     "checkForUpdates": "ตรวจสอบการอัพเดต"
   },
   "fileUpload": {
@@ -341,7 +341,7 @@
   "error": "ข้อผิดพลาด",
   "update": {
     "available": "มีอัปเดตใหม่",
-    "description": "มี Bocchi เวอร์ชันใหม่ให้ดาวน์โหลด",
+    "description": "มี KOCHAN เวอร์ชันใหม่ให้ดาวน์โหลด",
     "whatsNew": "มีอะไรใหม่",
     "downloading": "กำลังดาวน์โหลด...",
     "updateNow": "อัปเดตตอนนี้",

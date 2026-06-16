@@ -110,9 +110,9 @@
     "extractTo": "Extract to:",
     "havingTrouble": "Having trouble? You can also:",
     "dllRequired": "DLL Required",
-    "dllDmcaNotice": "Due to a recent DMCA takedown, Bocchi can no longer distribute the cslol-dll.dll file.",
-    "dllInstructions": "To use Bocchi, you must provide your own signed cslol-dll.dll file. Please obtain a properly signed cslol-dll.dll from an authorized source (such as building it yourself from the LeagueToolkit/cslol-manager repository) and place it in the tools folder.",
-    "dllWithoutNotice": "Click the button below to open the folder where you should place the DLL. Without this file, Bocchi cannot function.",
+    "dllDmcaNotice": "Due to a recent DMCA takedown, KOCHAN can no longer distribute the cslol-dll.dll file.",
+    "dllInstructions": "To use KOCHAN, you must provide your own signed cslol-dll.dll file. Please obtain a properly signed cslol-dll.dll from an authorized source (such as building it yourself from the LeagueToolkit/cslol-manager repository) and place it in the tools folder.",
+    "dllWithoutNotice": "Click the button below to open the folder where you should place the DLL. Without this file, KOCHAN cannot function.",
     "openToolsFolder": "Open Tools Folder"
   },
   "downloadAll": {
@@ -329,12 +329,12 @@
     }
   },
   "tray": {
-    "show": "Show Bocchi",
-    "hide": "Hide Bocchi",
+    "show": "Show KOCHAN",
+    "hide": "Hide KOCHAN",
     "language": "Language",
     "checkForUpdates": "Check for Updates",
     "openSettings": "Open Settings",
-    "quit": "Quit Bocchi"
+    "quit": "Quit KOCHAN"
   },
   "fileUpload": {
     "uploadButton": "Upload Custom Mod",
@@ -427,7 +427,7 @@
   "error": "Error",
   "update": {
     "available": "Update Available",
-    "description": "A new version of Bocchi is available for download.",
+    "description": "A new version of KOCHAN is available for download.",
     "whatsNew": "What's New",
     "downloading": "Downloading...",
     "updateNow": "Update Now",

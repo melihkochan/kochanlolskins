@@ -37,7 +37,7 @@ export class GitHubApiService {
         timeout: 10000, // 10 second timeout
         headers: {
           Accept: 'application/vnd.github.v3+json',
-          'User-Agent': 'Bocchi-LoL-Skin-Manager'
+          'User-Agent': 'KOCHAN-LoL-Skin-Manager'
         }
       })
 

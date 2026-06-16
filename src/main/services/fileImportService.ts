@@ -45,7 +45,7 @@ export class FileImportService {
   constructor() {
     const userData = app.getPath('userData')
     this.modsDir = path.join(userData, 'mods')
-    this.tempDir = path.join(app.getPath('temp'), 'bocchi-temp')
+    this.tempDir = path.join(app.getPath('temp'), 'kochan-temp')
     this.modFilesDir = path.join(userData, 'mod-files')
     this.settingsService = SettingsService.getInstance()
     this.modToolsWrapper = new ModToolsWrapper()
@@ -251,7 +251,7 @@ export class FileImportService {
 
             // Clean up the temp directory containing the extracted PNG
             const tempDirToClean = path.dirname(extractedImage)
-            if (tempDirToClean.includes('bocchi-temp')) {
+            if (tempDirToClean.includes('kochan-temp')) {
               await fs.rm(tempDirToClean, { recursive: true, force: true }).catch(() => {})
             }
           }
@@ -364,7 +364,7 @@ export class FileImportService {
 
             // Clean up the temp directory containing the extracted PNG
             const tempDirToClean = path.dirname(extractedImage)
-            if (tempDirToClean.includes('bocchi-temp')) {
+            if (tempDirToClean.includes('kochan-temp')) {
               await fs.rm(tempDirToClean, { recursive: true, force: true }).catch(() => {})
             }
           }
@@ -848,7 +848,7 @@ export class FileImportService {
 
       // Clean up the entire temp directory (the PNG is in a temp folder)
       const tempDirToClean = path.dirname(extractedImage)
-      if (tempDirToClean.includes('bocchi-temp')) {
+      if (tempDirToClean.includes('kochan-temp')) {
         await fs.rm(tempDirToClean, { recursive: true, force: true }).catch(() => {})
       }
 
@@ -1006,3 +1006,4 @@ export class FileImportService {
     }
   }
 }
+

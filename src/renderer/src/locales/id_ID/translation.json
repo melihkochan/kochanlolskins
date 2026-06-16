@@ -272,11 +272,11 @@
     }
   },
   "tray": {
-    "show": "Tampilkan Bocchi",
-    "hide": "Sembunyikan Bocchi",
+    "show": "Tampilkan KOCHAN",
+    "hide": "Sembunyikan KOCHAN",
     "language": "Bahasa",
     "openSettings": "Buka Pengaturan",
-    "quit": "Keluar dari Bocchi",
+    "quit": "Keluar dari KOCHAN",
     "checkForUpdates": "Periksa Pembaruan"
   },
   "fileUpload": {
@@ -341,7 +341,7 @@
   "error": "Error",
   "update": {
     "available": "Pembaruan Tersedia",
-    "description": "Versi baru Bocchi tersedia untuk diunduh.",
+    "description": "Versi baru KOCHAN tersedia untuk diunduh.",
     "whatsNew": "Apa yang Baru",
     "downloading": "Mengunduh...",
     "updateNow": "Perbarui Sekarang",
