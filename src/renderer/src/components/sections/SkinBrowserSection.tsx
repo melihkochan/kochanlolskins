@@ -113,6 +113,8 @@ export function SkinBrowserSection({
               onSkinImported={loadDownloadedSkins}
             />
           </div>
+          {/* Download All button temporarily disabled - bulk download not compatible with ID-based repository structure */}
+          {false && (
           <button
             onClick={showOptionsDialog}
             className={styles.manageButton.className}
@@ -128,6 +130,7 @@ export function SkinBrowserSection({
             </svg>
             {t('downloadAll.button')}
           </button>
+          )}
           <button
             onClick={() => setShowDownloadedSkinsDialog(true)}
             className={styles.manageButton.className}
