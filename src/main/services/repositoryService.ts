@@ -131,15 +131,8 @@ export class RepositoryService {
     const chromaMatch = skinFile.match(/^(.+?)\s+(\d{4,6})\.zip$/i)
     if (chromaMatch) {
       const chromaId = chromaMatch[2]
-      const baseSkinName = chromaMatch[1]
-
-      // Look up chroma name from skin_ids.json
-      const chromaName = this.getSkinNameById(chromaId)
-      if (chromaName) {
-        return `${baseUrl}/${encodeURIComponent(championName)}/${encodeURIComponent(baseSkinName)}/${encodeURIComponent(chromaName)}/${encodeURIComponent(chromaName)}.zip`
-      }
-
-      // Fallback: try constructing from champion data
+      
+      // For chromas, we need the championId and skinId
       if (championId) {
         const champion = championDataService.getChampionByIdSync(championId)
         if (champion) {
@@ -147,22 +140,37 @@ export class RepositoryService {
             if (skin.chromas && skin.chromaList) {
               const chroma = skin.chromaList.find((c) => c.id.toString() === chromaId)
               if (chroma) {
-                const fullChromaName = `${skin.nameEn || skin.name} (${chroma.name})`
-                return `${baseUrl}/${encodeURIComponent(championName)}/${encodeURIComponent(skin.nameEn || skin.name)}/${encodeURIComponent(fullChromaName)}/${encodeURIComponent(fullChromaName)}.zip`
+                // Use ID-based structure: skins/{championId}/{skinId}/{chromaId}/{chromaId}.zip
+                const skinId = `${championId}${skin.num.toString().padStart(3, '0')}`
+                return `${baseUrl}/${championId}/${skinId}/${chromaId}/${chromaId}.zip`
               }
             }
           }
         }
       }
-
+      
       console.warn(
-        `[LeagueSkins URL] Chroma ${chromaId} not found in skin_ids.json or champion data`
+        `[LeagueSkins URL] Chroma ${chromaId} not found in champion data for championId: ${championId}`
       )
+      return `${baseUrl}/${championName}/${skinFile}` // Fallback
     }
 
-    // Regular skin - nested: skins/{champion}/{skinName}/{skinName}.zip
+    // Regular skin - use ID-based structure: skins/{championId}/{skinId}/{skinId}.zip
+    if (championId) {
+      const champion = championDataService.getChampionByIdSync(championId)
+      if (champion) {
+        const skinName = skinFile.replace(/\.zip$/i, '')
+        const skin = champion.skins.find(s => (s.nameEn || s.name) === skinName)
+        if (skin) {
+          const skinId = `${championId}${skin.num.toString().padStart(3, '0')}`
+          return `${baseUrl}/${championId}/${skinId}/${skinId}.zip`
+        }
+      }
+    }
+
+    // Fallback to name-based structure (for backward compatibility)
     const skinName = skinFile.replace(/\.zip$/i, '')
-    return `${baseUrl}/${encodeURIComponent(championName)}/${encodeURIComponent(skinName)}/${encodeURIComponent(skinFile)}`
+    return `${baseUrl}/${encodeURIComponent(championName)}/${encodeURIComponent(skinName)}.zip`
   }
 
   constructRawUrl(url: string): string {
