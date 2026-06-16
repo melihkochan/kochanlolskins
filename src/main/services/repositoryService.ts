@@ -124,6 +124,8 @@ export class RepositoryService {
     _chromaBase?: string,
     championId?: number
   ): string {
+    console.log(`[RepositoryService] constructGitHubUrl called with:`, { championName, skinFile, championId })
+    
     const { owner, repo, branch, skinsPath } = LEAGUESKINS_REPO
     const baseUrl = `https://github.com/${owner}/${repo}/blob/${branch}/${skinsPath}`
 
@@ -142,7 +144,9 @@ export class RepositoryService {
               if (chroma) {
                 // Use ID-based structure: skins/{championId}/{skinId}/{chromaId}/{chromaId}.zip
                 const skinId = `${championId}${skin.num.toString().padStart(3, '0')}`
-                return `${baseUrl}/${championId}/${skinId}/${chromaId}/${chromaId}.zip`
+                const url = `${baseUrl}/${championId}/${skinId}/${chromaId}/${chromaId}.zip`
+                console.log(`[RepositoryService] Constructed chroma URL:`, url)
+                return url
               }
             }
           }
@@ -152,7 +156,9 @@ export class RepositoryService {
       console.warn(
         `[LeagueSkins URL] Chroma ${chromaId} not found in champion data for championId: ${championId}`
       )
-      return `${baseUrl}/${championName}/${skinFile}` // Fallback
+      const fallbackUrl = `${baseUrl}/${championName}/${skinFile}`
+      console.log(`[RepositoryService] Chroma fallback URL:`, fallbackUrl)
+      return fallbackUrl
     }
 
     // Regular skin - use ID-based structure: skins/{championId}/{skinId}/{skinId}.zip
@@ -163,14 +169,24 @@ export class RepositoryService {
         const skin = champion.skins.find(s => (s.nameEn || s.name) === skinName)
         if (skin) {
           const skinId = `${championId}${skin.num.toString().padStart(3, '0')}`
-          return `${baseUrl}/${championId}/${skinId}/${skinId}.zip`
+          const url = `${baseUrl}/${championId}/${skinId}/${skinId}.zip`
+          console.log(`[RepositoryService] Constructed regular skin URL:`, url)
+          return url
+        } else {
+          console.warn(`[RepositoryService] Skin not found in champion data:`, { championId, skinName, availableSkins: champion.skins.map(s => s.nameEn || s.name) })
         }
+      } else {
+        console.warn(`[RepositoryService] Champion not found by ID:`, championId)
       }
+    } else {
+      console.warn(`[RepositoryService] No championId provided for:`, { championName, skinFile })
     }
 
     // Fallback to name-based structure (for backward compatibility)
     const skinName = skinFile.replace(/\.zip$/i, '')
-    return `${baseUrl}/${encodeURIComponent(championName)}/${encodeURIComponent(skinName)}.zip`
+    const fallbackUrl = `${baseUrl}/${encodeURIComponent(championName)}/${encodeURIComponent(skinName)}.zip`
+    console.log(`[RepositoryService] Fallback to name-based URL:`, fallbackUrl)
+    return fallbackUrl
   }
 
   constructRawUrl(url: string): string {

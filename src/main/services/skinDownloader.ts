@@ -84,8 +84,11 @@ export class SkinDownloader {
   }
 
   async downloadSkin(url: string): Promise<SkinInfo> {
+    console.log(`[SkinDownloader] Starting download for URL: ${url}`)
+    
     // Parse GitHub URL to extract champion and skin name
     const skinInfo = this.parseGitHubUrl(url)
+    console.log(`[SkinDownloader] Parsed skin info:`, { championName: skinInfo.championName, skinName: skinInfo.skinName })
 
     // Create champion folders (ensure champion name is properly decoded)
     const decodedChampionName = decodeURIComponent(skinInfo.championName)
